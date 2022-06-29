@@ -1,4 +1,4 @@
-TERMINAL_LOADER_ON_PYTHON
+#TERMINAL_LOADER_ON_PYTHON
 
 from loader import Loader
 
