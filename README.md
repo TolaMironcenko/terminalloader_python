@@ -4,6 +4,15 @@ from loader import Loader
 
 ### code:
 ```python
+loader = Loader()
+print(loader)
+```
+
+### result:
+	|████████████████████████████████████████████████████████████████████████████████████████████████████| 100
+
+### code:
+```python
 loader = Loader(n=10, start='(', end=')', interval=0.1, color='white', symbol='*')
 print(loader)
 ```

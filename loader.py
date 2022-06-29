@@ -3,7 +3,7 @@ import time
 
 
 class Loader:
-	def __init__(self, n: int, start: str = '|', end: str = '|', interval: float = 0.1, color: str = 'green', symbol: str = '█'):
+	def __init__(self, n: int = 100, start: str = '|', end: str = '|', interval: float = 0.1, color: str = 'green', symbol: str = '█'):
 		self.n = n
 		self.start = start
 		self.end = end
