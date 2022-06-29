@@ -48,11 +48,11 @@ print(loader)
 	{@@@@@@@@@@@@@@@@@@@@@@@@@@-------} 78%
 
 ### colors:
-	- grey
-	- red
-	- green
-	- yellow
-	- blue
-	- magenta
-	- cyan
-	- white
+	* grey
+	* red
+	* green
+	* yellow
+	* blue
+	* magenta
+	* cyan
+	* white
