@@ -3,9 +3,10 @@
 from loader import Loader
 
 ### code:
-'''python
+```python
 loader = Loader(n=10, start='(', end=')', interval=0.1, color='white', symbol='*')
 print(loader) // python
+```
 
 ### result:
 	(**********) 10
