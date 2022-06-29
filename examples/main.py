@@ -12,25 +12,25 @@ def main():
         s += f"{(100 - (percent // 1)) * '.'}| "
         s += f"{percent}"
         cprint(s, 'green', end="\r")
-        time.sleep(0.1)
+        time.sleep(0.01)
 
     # with library tqdm
     for i in tqdm(range(10)):
         time.sleep(0.1)
 
     # with library progress
-    mylist = [1,2,3,4,5,6,7,8]
+    mylist = range(100)
 
     bar = IncrementalBar('Countdown', max = len(mylist))
 
     for item in mylist:
         bar.next()
-        time.sleep(0.1)
+        time.sleep(0.01)
 
     bar.finish()
 
     #with Loader
-    loader = Loader(n=10, start='{', end='}', interval=0.3, color='blue', symbol='@')
+    loader = Loader(n=100, start='{', end='}', interval=0.03, color='blue', symbol='@', step=3, defsymbol='-')
     print(loader)
 
 
