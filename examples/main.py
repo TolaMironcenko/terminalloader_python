@@ -2,6 +2,7 @@ import time
 from tqdm import tqdm
 from progress.bar import IncrementalBar
 from termcolor import cprint
+from loader import Loader
 
 
 def main():
@@ -15,7 +16,7 @@ def main():
 
     # with library tqdm
     for i in tqdm(range(10)):
-        time.sleep(1)
+        time.sleep(0.1)
 
     # with library progress
     mylist = [1,2,3,4,5,6,7,8]
@@ -24,9 +25,13 @@ def main():
 
     for item in mylist:
         bar.next()
-        time.sleep(1)
+        time.sleep(0.1)
 
     bar.finish()
+
+    #with Loader
+    loader = Loader(n=10, start='{', end='}', interval=0.3, color='blue', symbol='@')
+    print(loader)
 
 
 if __name__ == '__main__':
