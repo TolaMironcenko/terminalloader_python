@@ -23,6 +23,7 @@ class Loader:
 		self.symbol = symbol
 		self.step = step
 		self.display = display
+		self.defsymbol = defsymbol
 
 	def __str__(self):
 		for percent in range(self.n+1):
