@@ -11,7 +11,7 @@ def main():
         s = f"|{(percent // 1) * '█'}"
         s += f"{(100 - (percent // 1)) * '.'}| "
         s += f"{percent}"
-        cprint(s, 'green', end="\r")
+        cprint(s, 'green', end='\r')
         time.sleep(0.01)
 
     # with library tqdm
@@ -30,6 +30,8 @@ def main():
     bar.finish()
 
     #with Loader
+    loader = Loader(interval=0.01)
+    print(loader)
     loader = Loader(n=100, start='{', end='}', interval=0.03, color='blue', symbol='@', step=3, defsymbol='-')
     print(loader)
 
