@@ -29,8 +29,8 @@ def main():
 
     bar.finish()
 
-    #with Loader
-    loader = Loader(interval=0.01)
+    # with Loader
+    loader = Loader()
     print(loader)
     loader = Loader(n=100, start='{', end='}', interval=0.03, color='blue', symbol='@', step=3, defsymbol='-')
     print(loader)
