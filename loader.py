@@ -31,9 +31,9 @@ class Loader:
 			s += f"{(self.n//self.step - (percent // self.step)) * self.defsymbol}" + self.end + ' '
 			s += f"{percent}"
 			if self.display == 'percent':
-				s+='%'
+				s += '%'
 			elif self.display == 'of':
-				s+=f'/{self.n}'
+				s += f'/{self.n}'
 			cprint(s, self.color, end="\r")
 			time.sleep(self.interval)
 		return s

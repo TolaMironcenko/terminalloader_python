@@ -15,15 +15,15 @@ def main():
         time.sleep(0.01)
 
     # with library tqdm
-    for i in tqdm(range(10)):
+    for _ in tqdm(range(10)):
         time.sleep(0.1)
 
     # with library progress
     mylist = range(100)
 
-    bar = IncrementalBar('Countdown', max = len(mylist))
+    bar = IncrementalBar('Countdown', max=len(mylist))
 
-    for item in mylist:
+    for _ in mylist:
         bar.next()
         time.sleep(0.01)
 
@@ -43,4 +43,4 @@ if __name__ == '__main__':
         cprint('exited', 'green')
         exit()
     except Exception as e:
-        cprint('Error: '+str(e), 'red')
+        cprint('Error: ' + str(e), 'red')

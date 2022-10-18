@@ -3,17 +3,18 @@ import time
 
 
 class Loader:
-	def __init__(self, 
-		n: int = 100, 
-		start: str = '|', 
-		end: str = '|', 
-		interval: float = 0.1, 
-		color: str = 'green', 
-		symbol: str = '█', 
-		step: int = 1, 
+	def __init__(
+		self,
+		n: int = 100,
+		start: str = '|',
+		end: str = '|',
+		interval: float = 0.1,
+		color: str = 'green',
+		symbol: str = '█',
+		step: int = 1,
 		display: str = 'percent',
-		defsymbol: str = '.'
-	):
+		defsymbol: str = '.'):
+
 		self.n = n
 		self.start = start
 		self.end = end
@@ -30,9 +31,9 @@ class Loader:
 			s += f"{(self.n//self.step - (percent // self.step)) * self.defsymbol}" + self.end + ' '
 			s += f"{percent}"
 			if self.display == 'percent':
-				s+='%'
+				s += '%'
 			elif self.display == 'of':
-				s+=f'/{self.n}'
+				s += f'/{self.n}'
 			cprint(s, self.color, end="\r")
 			time.sleep(self.interval)
 		return s
